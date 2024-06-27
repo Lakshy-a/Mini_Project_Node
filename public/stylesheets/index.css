@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main_container {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  #input_text {
+    margin: 5px 0;
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    font-size: 15px;
+    outline: none;
+  }
+
+  #textArea {
+    margin: 5px 0;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    resize: none;
+    font-size: 15px;
+    outline: none;
+  }
+
+  .create_task {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  .tasks {
+    margin: 50px 0 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .task {
+    background-color: rgb(32, 31, 31);
+    width: 100%;
+    max-width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    /* visibility: hidden; */
+  }
+
+  .read_more {
+    color: rgb(159, 67, 67);
+    text-decoration: none;
+  }
+
+  .edit{
+    text-decoration: none;
+    color: rgb(159, 67, 67);
+    margin-left: auto;
+  }
+
+  .links{
+    display: flex;
+  }
+
+  @media (min-width: 600px) {
+    .task {
+      flex: 1 1 calc(50% - 30px);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .task {
+      flex: 1 1 calc(33.333% - 30px);
+    }
+  }
+
+  .noTaskYet{
+    margin: 50px 5px;
+    color: brown;
+  }

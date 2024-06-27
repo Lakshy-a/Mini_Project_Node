@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main_container {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  .goBack{
+    text-decoration: none;
+    color: brown;
+  }
+
+  #input_text {
+    margin: 5px 0;
+    width: 40%;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(58, 56, 56);
+    color: rgb(149, 146, 146);
+    font-size: 15px;
+    outline: none;
+  }
+
+  #edit_text{
+    margin: 5px 0;
+    width: 40%;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    font-size: 15px;
+    outline: none;
+  }
+
+  .create_task {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    background-color: goldenrod;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+  }

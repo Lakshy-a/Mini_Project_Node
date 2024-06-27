@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is the index page...</title>
+    <link rel="stylesheet" href="stylesheets/index.css" />
+  </head>
+
+  <body>
+    <div class="main_container">
+      <form action="/create" method="post">
+        <input
+          type="text"
+          id="input_text"
+          placeholder="Title Goes Here..."
+          name="title"
+        /><br />
+
+        <textarea
+          id="textArea"
+          placeholder="Description Goes Here..."
+          name="description"
+        ></textarea
+        ><br />
+
+        <button class="create_task">Create Task</button>
+      </form>
+      <div class="tasks">
+        <% if (files.length > 0) { %> <% files.forEach((val) => { %>
+        <div class="task one">
+          <h2><%= val%></h2>
+          <br />
+          <div class="links">
+            <a href="/files/<%= val%>" class="read_more">Read More...</a>
+            <a href="/edit/<%= val%>" class="edit">Edit...</a>
+          </div>
+        </div>
+        <% }); %> <% } else { %>
+        <h3 class="noTaskYet">To task yet...</h3>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

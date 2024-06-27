@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is the edit data page...</title>
+    <link rel="stylesheet" href="/stylesheets/edit.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <a href="/" class="goBack">Go back to home</a>
+
+      <form action="/edit" method="post">
+        <input
+          type="text"
+          id="input_text"
+          placeholder="Previous Title"
+          name="previoustitle"
+          value="<%= fileName %>" 
+        /><br />
+
+        <input
+          type="text"
+          id="edit_text"
+          placeholder="New Title"
+          name="newtitle"
+        /><br />
+
+        <button class="create_task">Edit Filename</button>
+      </form>
+    </div>
+  </body>
+</html>
